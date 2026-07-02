@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# PyInstaller (artefactos de build; el .exe se publica en Releases)
+build/
+dist/
+*.spec
+
+# Capturas y salidas de prueba
+*.pcapng
+*.etl
+*.log
+out.*
+sample.*
