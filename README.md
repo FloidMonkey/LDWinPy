@@ -31,7 +31,7 @@ y la lleva mucho más lejos.
 
 ## 📥 Descarga
 
-**[Descargar LDWin.exe (última versión)](../../releases/latest)** — un solo
+**[Descargar LDWinPy.exe (última versión)](../../releases/latest)** — un solo
 archivo, sin dependencias: no necesita Python, ni scapy, ni drivers. Solo
 Windows 10 1809+ / Windows 11 y privilegios de Administrador (los pide
 automáticamente vía UAC).
@@ -136,7 +136,7 @@ El `.exe` de [Releases](../../releases/latest) no requiere nada de esto.
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File build_exe.ps1
-# Genera dist\LDWin.exe (manifiesto de Administrador incluido)
+# Genera dist\LDWinPy.exe (manifiesto de Administrador incluido)
 ```
 
 ## Pruebas

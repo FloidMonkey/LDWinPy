@@ -6,14 +6,14 @@ Set-Location $PSScriptRoot
 Write-Host "Instalando dependencias de build..." -ForegroundColor Cyan
 python -m pip install --quiet --upgrade scapy pyinstaller
 
-Write-Host "Compilando LDWin.exe (requiere admin, con GUI)..." -ForegroundColor Cyan
+Write-Host "Compilando LDWinPy.exe (requiere admin, con GUI)..." -ForegroundColor Cyan
 pyinstaller --noconfirm --clean --onefile --windowed `
-    --name LDWin `
+    --name LDWinPy `
     --uac-admin `
     --collect-submodules scapy `
     --hidden-import ldwin.gui `
     run_gui.py
 
 Write-Host ""
-Write-Host "Listo. Binario en: dist\LDWin.exe" -ForegroundColor Green
+Write-Host "Listo. Binario en: dist\LDWinPy.exe" -ForegroundColor Green
 Write-Host "Nota: pktmon ya viene en Windows; no se empaqueta nada de captura." -ForegroundColor DarkGray
